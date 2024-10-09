@@ -23,6 +23,16 @@ body {
     align-items: center;
     margin: 0 auto;
 }
+.about h1{
+    font-size: 3em;
+    text-align: center;
+    padding: .2em;
+    background-color: var(--text-light);
+    color: var(--background-color);
+    font-family: monospace;
+    font-weight: bold;
+    box-shadow: 0 2px 3px var(--text-color);
+}
 .info1{
     width: 100%;
     padding: 1em;
