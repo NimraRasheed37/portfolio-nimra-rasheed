@@ -20,8 +20,85 @@ body {
     width: 100%;
     height: 100vh;
     background-color: var(--text-light);
-
 }
+.skills h1{
+    font-size: 3em;
+    text-align: center;
+    padding: .3em;
+    background-color: var(--text-color);
+    color: var(--background-color);
+    font-family: monospace;
+    font-weight: bold;
+    box-shadow: 0 2px 3px var(--background-color);
+}
+.skills-cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    padding: 1em;
+    width: 100%;
+}
+.skill-card{
+    width: 200px;
+    height: 200px;
+    padding: 1em;
+    text-align: center;
+    border-radius: 10px;
+    background-color: var(--background-color);
+    box-shadow: 0 2px 6px var(--text-color);
+    margin: 1em auto;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+.skill-card:hover{
+    border: 2px solid var(--text-color);
+    box-shadow: 0 2px 6px var(--background-color);
+}
+.skill-card h2{
+    margin-bottom: .6em;
+    color: var(--text-color);
+    font-size: 1.3em;
+}
+.progress{
+    position: relative;
+    display: inline-block;
+}
+.circle{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: conic-gradient(var(--text-light) 0% 90%, #d3d3d3 90% 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.circle img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    z-index: 2;
+}
+.percentage{
+    position: absolute;
+    font-size: .75em;
+    font-weight: bold;
+    color: var(--text-color);
+}
+#css{
+    background: conic-gradient(var(--text-light) 0% 80%, #d3d3d3 80% 100%);  
+}
+#js, #ts  {
+    background: conic-gradient(var(--text-light) 0% 60%, #d3d3d3 60% 100%);
+}
+#bs, #tw{
+    background: conic-gradient(var(--text-light) 0% 40%, #d3d3d3 40% 100%);
+}
+#react{
+    background: conic-gradient(var(--text-light) 0% 50%, #d3d3d3 50% 100%);
+}
+
+
 /*Responsiveness for 960px and above screen size*/
 
 @media (max-width: 1089px){
@@ -50,7 +127,10 @@ body {
     #description{
         font-size: .75em;
     }
-
+    .skills-cards{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 /*to hide side-bar in width more than 780px */
 @media (min-width: 780px){
@@ -90,5 +170,33 @@ body {
     #cv{
         margin-top: 1em;
     }
+    .skills-cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
+@media (max-width: 480px){
+    .skills-cards{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1%;
+    }
+    .skill-card{
+        width: 120px;
+        height: 120px;
+        padding: 5px;
+        font-size: .75em;
+    }
+    .circle{
+        width: 70px;
+        height: 70px;
+    }
+    .circle img{
+        width: 35px;
+        height: 35px;
+    }
+    .percentage{
+        font-size: .65em;
+    }
 }
