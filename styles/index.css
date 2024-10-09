@@ -176,10 +176,10 @@ body {
     }
 }
 
-@media (max-width: 560px){
+@media (max-width: 480px){
     .skills-cards{
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 1%;
     }
     .skill-card{
