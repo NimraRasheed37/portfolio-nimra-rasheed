@@ -149,8 +149,9 @@ header {
 }
 #description {
   color: var(--text-light);
-  font-size: 1em;
-  letter-spacing: 2px;
+  font-size: 1.5em;
+  word-spacing: 5px;
+  margin-top: 2%;
 }
 #cv {
   padding: 10px 16px;
@@ -160,7 +161,7 @@ header {
   font-weight: bold;
   font-size: 1.5em;
   border-radius: 5px;
-  margin-top: 2em;
+  margin-top: 1em;
   cursor: pointer;
   font-weight: bold;
 }
@@ -431,7 +432,7 @@ textarea {
 /*Footer styling*/
 footer{
   width: 100%;
-  height: 50vh;
+  height: auto;
   background-color: var(--text-light);
   color: var(--background-color);
   display: grid;
@@ -535,7 +536,6 @@ footer{
       border: none;
     }
     footer{
-      height: 50vh;
       padding: 2em;
     }
     #moto h4, #connecting-links h4, #links h4{
