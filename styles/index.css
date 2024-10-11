@@ -495,13 +495,13 @@ a:hover{
 /*Responsiveness for 480px and above screen size*/
 @media (max-width: 480px) {
     #name{
-        font-size: 2em;
+        font-size: 1.6em;
     }
     #job{
-        font-size: 1em;
+        font-size: .75em;
     }
     #description{
-        font-size: 14px;
+        font-size: 13px;
     }
     .skills-cards{
         display: grid;
