@@ -605,6 +605,7 @@ textarea {
     height: auto;
   }
   .contact-form{
+    width: 90%;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 200px 1fr;
