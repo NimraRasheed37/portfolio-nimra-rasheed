@@ -24,3 +24,7 @@ msgBtn.addEventListener('click', (event) => {
     msgSent.classList.toggle("active");
 });
 
+//Function to send Email when email link in clicked in footer
+function sendEmail() {
+    const gmailLink = "https://mail.google.com/mail/?view=cm&fs=1&to=nimrarasheed.na@gmail.com&su=Hello&body=Write%20your%20message%20here";
+            window.open(gmailLink, '_blank');}
