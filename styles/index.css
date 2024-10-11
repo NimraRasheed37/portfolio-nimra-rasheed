@@ -437,25 +437,27 @@ footer{
   display: grid;
   grid-template-columns: 1fr 400px 300px;
   grid-template-rows: auto;
-  padding: 4em 2em;
+  padding: 3em;
 }
 #moto{
   text-align: left;
   border-right: 2px solid var(--background-color);
 }
 #moto h4{
-  font-size: 3em;
+  font-size: 2em;
   text-shadow: 0px 2px 3px var(--text-color);
 }
 #moto p{
-  font-size: 1.5em;
+  font-size: 1.2em;
+  margin-top: 1.5em;
+  font-weight: bold;
 }
 #links, #moto{
   border-right: 2px solid var(--background-color);
   margin-right: 3em;
 }
 #connecting-links h4, #links h4{
-  font-size: 2em;
+  font-size: 1.5em;
   text-shadow: 0px 2px 3px var(--text-color);
   margin-bottom: 1em;
 }
@@ -477,6 +479,7 @@ footer{
 }
 #section-links p{
   margin-bottom: 1em;
+  font-size: 1em;
 }
 
 
@@ -531,6 +534,20 @@ footer{
     #moto{
       border: none;
     }
+    footer{
+      height: 50vh;
+      padding: 2em;
+    }
+    #moto h4, #connecting-links h4, #links h4{
+      font-size: 1.5em;
+    }
+    #connecting-links p, #links p{
+      font-size: .80em;
+    }
+    #moto p{
+      font-size: 1em;
+      margin-top: 2%;
+    }
 }
 
 /*Responsiveness for 960px and above screen size*/
@@ -569,6 +586,9 @@ footer{
     margin: 6% 22%;
     padding: .7em;
     font-size: 1em;
+  }
+  label{
+    font-size: 1.6em;
   }
 }
 /*Responsiveness for 830px and above screen size*/
@@ -673,12 +693,6 @@ footer{
   }
   label{
     font-size: 1.6em;
-  }
-  #connecting-links h4, #links h4{
-    font-size: 1.5em;
-  }
-  #connecting-links p, #links p{
-    font-size: .80em;
   }
 }
 @media (max-width: 625px){
