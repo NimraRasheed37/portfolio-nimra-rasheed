@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nimra Rasheed - Portfolio</title>
     <link rel="stylesheet" href="/styles/index.css">
-    <link rel="stylesheet" href="/styles/sections/nav-bar.css">
-    <link rel="stylesheet" href="/styles/sections/about.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -18,11 +16,12 @@
                 <i class="fa fa-bars" id="nav-bar" aria-hidden="true"></i>
                 <ul class="nav-links">
                     <li><a href="#about">About</a></li>
-                    <li><a href="#">Skills</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#">Projects</a></li>
                     <li><a href="#">Contact Me</a></li>
                 </ul>
         </header>
+        <!--Sidebar section-->
         <div id="side-bar" class="side-bar">
             <ul class="side-bar-links">
                 <!--
@@ -31,16 +30,16 @@
                     </div>
                 -->
                 <li><a href="#about">About</a></li>
-                <li><a href="#">Skills</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#">Projects</a></li>
                 <li><a href="#">Contact Me</a></li>
             </ul>
         </div>
  
         <!--About me Section-->
-        <section class="about">
-            <h1>About Me</h1>
-            <div class="about-me" id="about">
+        <section id="about">
+         <!--<h1>About Me</h1>-->
+            <div class="about-me">
                 <div class="info1">
                     <h2 id="name">NIMRA RASHEED</h1><br>
                     <h3 id="job">Front-end-Developer</h3><br>
@@ -48,7 +47,7 @@
                     <button id="cv">Download CV</button>
                 </div>
                 <div class="info2">
-                    <img src="/img/1 (24).jpg" alt="nimra">
+                    <img src="/img/nimra.jpg" alt="nimra">
                     <div class="links">
                         <a href="https://www.LinkedIn.com/yourprofile" target="_blank" aria-label="LinkedIn">
                             <i class="fa fa-linkedin"></i>
@@ -66,7 +65,7 @@
 
 
         <!--My Skills Section-->
-        <section class="skills">
+        <section id="skills">
             <h1>Skills</h1>
             <div class="skills-cards">
                 <div class="skill-card">
@@ -154,8 +153,70 @@
         </section>
 
         <!--My Projects Section-->
-        <section class="projects">
+        <section id="projects">
+            <h1>Projects</h1>
+            <div class="projects-cards">
 
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/img/projects/age-calculator.PNG" alt="age-calculator">
+                    </div>
+                    <div class="project-info">
+                        <h2 id="project-name">Age Calculator</h4>
+                        <a href="https://age-calculator-by-nimra-rasheed.vercel.app/">View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/img/projects/simple-calculator.PNG" alt="simple-calculator">
+                    </div>
+                    <div class="project-info">
+                        <h2 id="project-name">Simple Calculator</h4>
+                        <a href="https://simple-calculator-by-nimra-rasheed.vercel.app/">View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/img/projects/music-player.PNG" alt="music-player">
+                    </div>
+                    <div class="project-info">
+                        <h2 id="project-name">Music Player</h4>
+                        <a href="https://music-player-by-nimra.vercel.app/">View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/img/projects/food-recipes.PNG" alt="foodily">
+                    </div>
+                    <div class="project-info">
+                        <h2 id="project-name">Foodily Ever After</h4>
+                        <a href="https://react-food-recipe-app-by-nimra.vercel.app/">View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/img/projects/Resume Generator.PNG" alt="resume-generator">
+                    </div>
+                    <div class="project-info">
+                        <h2 id="project-name">Resume Generator</h4>
+                        <a href="https://resume-builder-by-nimra-rasheed.vercel.app/">View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/img/projects/wallpapers.PNG" alt="wallpapers">
+                    </div>
+                    <div class="project-info">
+                        <h2 id="project-name">Walpapers Downloader</h4>
+                        <a href="https://wallpaper-downloader-by-nimra-rasheed.vercel.app/">View Project</a>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!--Contact Me Form-->
