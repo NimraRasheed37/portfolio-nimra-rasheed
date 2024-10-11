@@ -5,7 +5,7 @@
     --shadow-color: #a69080;
 }
  
-* {
+*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -25,24 +25,22 @@ header{
     height: 3.5em;
     text-align: center;
 }
-
 .logo{
-    margin-left: 1%;
+    margin-left: 20px;
 }
 .nav-links{
     display: inline-flex;
     list-style-type: none;
-    gap: 3em;
-    font-family: monospace;
-    font-weight: bold;
-    font-size: 1.2em;
+    gap: 4em;
 }
 .nav-links li a{
     text-decoration: none;
     color: var(--background-color);
-    font-size: 1.5em;
+    font-size: 2em;
     margin-right: 1em;
-    padding: 8px;
+    padding: 8px 10px;
+    font-family: monospace;
+    font-weight: bold;
 }
 .nav-links li a:hover{
     background-color: var(--background-color);
@@ -360,6 +358,10 @@ a:hover{
 }
 /*Responsiveness for 1089px and above screen size*/
 @media (max-width: 1089px){
+    .nav-links li a{
+        padding: 4px;
+        font-size: 1.5em;
+    }
     #name{
         font-size: 2.5em;
     }
@@ -379,7 +381,7 @@ a:hover{
         padding: 4px;
     }
     .about-me{
-        width: 96%;
+        width: 80%;
     }
     #name{
         font-size: 2.2em;
@@ -464,7 +466,29 @@ a:hover{
     }
     .skills-cards{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .skills-cards{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1%;
+    }
+    .skill-card{
+        width: 120px;
+        height: 120px;
+        padding: 5px;
+        font-size: .75em;
+    }
+    .circle{
+        width: 70px;
+        height: 70px;
+    }
+    .circle img{
+        width: 35px;
+        height: 35px;
+    }
+    .percentage{
+        font-size: .65em;
     }
 
 }
@@ -481,7 +505,7 @@ a:hover{
     }
     .skills-cards{
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 1%;
     }
     .skill-card{
