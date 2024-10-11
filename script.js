@@ -1,7 +1,16 @@
+const navBar = document.getElementById('nav-bar');
+const sideBar = document.getElementById('side-bar');
+const sideBarLinks = document.querySelectorAll("#side-bar .side-bar-links a");
 
-//Function to control Sidebar
-document.getElementById('nav-bar').addEventListener('click', function() {
-    const sidebar = document.getElementById('side-bar');
-    // Toggle the "active" class to show or hide the sidebar
-    sidebar.classList.toggle('active');
+//open sidebarhwn clicked on navBar 
+navBar.addEventListener('click', () => {
+    sideBar.classList.toggle("active");
 });
+
+//close sidebar when any link is clicked
+sideBarLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        sideBar.classList.remove("active");
+    });
+});
+ 
