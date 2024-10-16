@@ -125,7 +125,7 @@ header {
 
 .about-me {
   display: grid;
-  grid-template-columns: 1fr 600px;
+  grid-template-columns: 1fr 1fr;
   width: 100%;
   height: auto;
   align-items: center;
@@ -146,7 +146,7 @@ header {
   color: var(--background-color);
   padding: 4px 10px;
   font-size: 1.5em;
-  width: 50%;
+  width: 70%;
 }
 #description {
   color: var(--text-light);
