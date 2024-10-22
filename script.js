@@ -16,7 +16,6 @@ sideBarLinks.forEach(link => {
 });
 
 
-//https://drive.google.com/file/d/1G9kfrSB1luFw-lChcjOWMvdDs72uGta7/view?usp=drive_link
 //download cv button functionality
 
 document.getElementById('cv').addEventListener('click', function() {
@@ -36,4 +35,29 @@ msgBtn.addEventListener('click', (event) => {
 //Function to send Email when email link in clicked in footer
 function sendEmail() {
     const gmailLink = "https://mail.google.com/mail/?view=cm&fs=1&to=nimrarasheed.na@gmail.com&su=Hello&body=Write%20your%20message%20here";
-            window.open(gmailLink, '_blank');}
+            window.open(gmailLink, '_blank');
+}
+
+//send message button functionality
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevent form from submitting the traditional way
+    
+    // Get the form values
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    // Construct the mailto link with form data
+    const mailtoLink = `mailto:nimrarasheed.na@gmail.com?subject=Message from ${name}&body=Name: ${name}%0D%0AEmail: ${email}%0D%0AMessage: ${message}`;
+    
+    // Open the user's default mail client with the mailto link
+    window.location.href = mailtoLink;
+
+    // Show success message
+    document.getElementById('msg-sent').style.display = 'block';
+});
+
+
+
+
+
