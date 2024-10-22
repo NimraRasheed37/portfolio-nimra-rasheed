@@ -16,6 +16,15 @@ sideBarLinks.forEach(link => {
 });
 
 
+//https://drive.google.com/file/d/1G9kfrSB1luFw-lChcjOWMvdDs72uGta7/view?usp=drive_link
+//download cv button functionality
+
+document.getElementById('cv').addEventListener('click', function() {
+    const link = document.createElement('a');
+    link.href = 'https://drive.google.com/file/d/1G9kfrSB1luFw-lChcjOWMvdDs72uGta7/view?usp=drive_link';
+    window.open(link, '_blank');
+} );
+
 const msgSent = document.getElementById('msg-sent');
 const msgBtn = document.getElementById('msg-btn');
 //show msgSent when msgBtn is clicked
