@@ -20,7 +20,7 @@ sideBarLinks.forEach(link => {
 
 document.getElementById('cv').addEventListener('click', function() {
     const link = document.createElement('a');
-    link.href = 'https://drive.google.com/file/d/1G9kfrSB1luFw-lChcjOWMvdDs72uGta7/view?usp=drive_link';
+    link.href = 'https://drive.google.com/file/d/14HhLU9ck-plzYcwm7EVRNq8ICICplcTb/view?usp=sharing';
     window.open(link, '_blank');
 } );
 

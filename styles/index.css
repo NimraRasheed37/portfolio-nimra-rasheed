@@ -278,6 +278,9 @@ section h1 {
 #css {
   background: conic-gradient(var(--text-light) 0% 80%, #d3d3d3 80% 100%);
 }
+#njs {
+  background: conic-gradient(var(--text-light) 0% 70%, #d3d3d3 70% 100%);
+}
 #js,
 #ts {
   background: conic-gradient(var(--text-light) 0% 60%, #d3d3d3 60% 100%);
